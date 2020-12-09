@@ -1,0 +1,10 @@
+<?php 
+	session_start();
+	$_SESSION["td_login_id_login"]; 
+	$_SESSION["td_login_username"]; 
+	unset($_SESSION["td_login_id_login"]); 
+	unset($_SESSION["td_login_username"]); 
+	session_unset(); 
+	session_destroy(); 
+	header("location:../index.php"); 
+?>
